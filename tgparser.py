@@ -30,7 +30,7 @@
 import re
 import numpy as np
 
-class tgparser:
+class parseTG:
     
     def __process_point(self,tgfile):
         '''
@@ -337,7 +337,7 @@ class tgparser:
         self.__tierstamps=np.asarray(self.__tierstamps)
         self.tiers=tierorder
 
-        if status=-1:
+        if self.status==-1:
             print "Failed to parse TextGrid file: "+tgfile
 
     def printTiersInfo(self):
